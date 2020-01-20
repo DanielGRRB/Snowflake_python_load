@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[7]:
-
-
 import pandas as pd
 import snowflake.connector
 from snowflake.sqlalchemy import URL
@@ -30,10 +24,3 @@ df.to_sql("raw_data", con=engine, index=False, if_exists="replace", chunksize=10
 
 connection.close()
 engine.dispose()
-
-
-# In[ ]:
-
-
-
-
